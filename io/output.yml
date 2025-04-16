@@ -106,3 +106,21 @@
   type: )
 ";":
   type: ;
+"var":
+  type: VAR
+"str":
+  type: IDENT
+"=":
+  type: =
+"This is a string":
+  type: STRING
+"print":
+  type: IDENT
+"(":
+  type: (
+"result":
+  type: IDENT
+")":
+  type: )
+";":
+  type: ;

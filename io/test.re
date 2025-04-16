@@ -19,3 +19,6 @@ var result = isEqual(five, ten);
 
 // Print the result
 print(result);
+
+var str = "This is a string"
+print(result);

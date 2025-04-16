@@ -88,6 +88,10 @@ func (l *Lexer) NextToken() token.Token {
 		tok = newToken(token.LT, l.ch)
 	case '>':
 		tok = newToken(token.GT, l.ch)
+	case '"':
+		tok.Literal = l.readString()
+		tok.Type = token.STRING
+		return tok
 	case ';':
 		tok = newToken(token.SEMICOLON, l.ch)
 	case '(':
@@ -136,6 +140,18 @@ func (l *Lexer) readIdentifier() string {
 	return l.input[position:l.position]
 }
 
+func (l *Lexer) readString() string {
+    l.readChar()
+    start := l.position
+    for l.ch != '"' && l.ch != 0 {
+        l.readChar()
+    }
+    str := l.input[start:l.position]
+    if l.ch == '"' {
+        l.readChar()
+    }
+    return str
+}
 func (l *Lexer) skipWhitespace() {
 	for l.ch == ' ' || l.ch == '\t' || l.ch == '\n' || l.ch == '\r' {
 		l.readChar()
