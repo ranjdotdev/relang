@@ -1,0 +1,108 @@
+"var":
+  type: VAR
+"isEqual":
+  type: IDENT
+"=":
+  type: =
+"fn":
+  type: FUNCTION
+"(":
+  type: (
+"x":
+  type: IDENT
+",":
+  type: ,
+"y":
+  type: IDENT
+")":
+  type: )
+"{":
+  type: {
+"if":
+  type: IF
+"(":
+  type: (
+"x":
+  type: IDENT
+"==":
+  type: ==
+"y":
+  type: IDENT
+")":
+  type: )
+"{":
+  type: {
+"return":
+  type: RETURN
+"true":
+  type: TRUE
+";":
+  type: ;
+"}":
+  type: }
+"else":
+  type: ELSE
+"{":
+  type: {
+"return":
+  type: RETURN
+"false":
+  type: FALSE
+";":
+  type: ;
+"}":
+  type: }
+"}":
+  type: }
+";":
+  type: ;
+"var":
+  type: VAR
+"five":
+  type: IDENT
+"=":
+  type: =
+"5":
+  type: INT
+";":
+  type: ;
+"var":
+  type: VAR
+"ten":
+  type: IDENT
+"=":
+  type: =
+"10":
+  type: INT
+";":
+  type: ;
+"var":
+  type: VAR
+"result":
+  type: IDENT
+"=":
+  type: =
+"isEqual":
+  type: IDENT
+"(":
+  type: (
+"five":
+  type: IDENT
+",":
+  type: ,
+"ten":
+  type: IDENT
+")":
+  type: )
+";":
+  type: ;
+"print":
+  type: IDENT
+"(":
+  type: (
+"result":
+  type: IDENT
+")":
+  type: )
+";":
+  type: ;
