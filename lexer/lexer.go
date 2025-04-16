@@ -51,7 +51,37 @@ func (l *Lexer) NextToken() token.Token {
 			tok = newToken(token.BANG, l.ch)
 		}
 	case '/':
-		tok = newToken(token.SLASH, l.ch)
+		if l.peekChar() == '/' {
+			l.readChar() 
+			l.readChar()
+			
+			for l.ch != '\n' && l.ch != 0 {
+				l.readChar()
+			}
+			
+			return l.NextToken()
+		} else if l.peekChar() == '*' {
+			l.readChar()
+			l.readChar()
+			
+			for {
+				if l.ch == 0 {
+					tok = newToken(token.ILLEGAL, l.ch)
+					return tok
+				}
+				
+				if l.ch == '*' && l.peekChar() == '/' {
+					l.readChar()
+					l.readChar()
+					
+					return l.NextToken()
+				}
+				
+				l.readChar()
+			}
+		} else {
+			tok = newToken(token.SLASH, l.ch)
+		}
 	case '*':
 		tok = newToken(token.ASTERISK, l.ch)
 	case '<':
