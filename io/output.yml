@@ -1,6 +1,6 @@
 "var":
   type: VAR
-"isEqual":
+"isPrime":
   type: IDENT
 "=":
   type: =
@@ -8,11 +8,7 @@
   type: FUNCTION
 "(":
   type: (
-"x":
-  type: IDENT
-",":
-  type: ,
-"y":
+"c":
   type: IDENT
 ")":
   type: )
@@ -22,26 +18,18 @@
   type: IF
 "(":
   type: (
-"x":
+"c":
   type: IDENT
+"%":
+  type: %
+"2":
+  type: INT
 "==":
   type: ==
-"y":
-  type: IDENT
+"0":
+  type: INT
 ")":
   type: )
-"{":
-  type: {
-"return":
-  type: RETURN
-"true":
-  type: TRUE
-";":
-  type: ;
-"}":
-  type: }
-"else":
-  type: ELSE
 "{":
   type: {
 "return":
@@ -52,75 +40,654 @@
   type: ;
 "}":
   type: }
+"var":
+  type: VAR
+"d":
+  type: IDENT
+";":
+  type: ;
+"d":
+  type: IDENT
+"=":
+  type: =
+"3":
+  type: INT
+";":
+  type: ;
+"for":
+  type: LOOP
+"(":
+  type: (
+"d":
+  type: IDENT
+"!=":
+  type: !=
+"c":
+  type: IDENT
+")":
+  type: )
+"{":
+  type: {
+"if":
+  type: IF
+"(":
+  type: (
+"c":
+  type: IDENT
+"%":
+  type: %
+"d":
+  type: IDENT
+"==":
+  type: ==
+"0":
+  type: INT
+")":
+  type: )
+"{":
+  type: {
+"return":
+  type: RETURN
+"false":
+  type: FALSE
+";":
+  type: ;
+"}":
+  type: }
+"d":
+  type: IDENT
+"=":
+  type: =
+"d":
+  type: IDENT
+"+":
+  type: +
+"2":
+  type: INT
+";":
+  type: ;
+"}":
+  type: }
+"var":
+  type: VAR
+"s":
+  type: IDENT
+"=":
+  type: =
+"This is a useless string literal":
+  type: STRING
+"return":
+  type: RETURN
+"true":
+  type: TRUE
+";":
+  type: ;
 "}":
   type: }
 ";":
   type: ;
 "var":
   type: VAR
-"five":
+"gcd":
   type: IDENT
 "=":
   type: =
-"5":
-  type: INT
+"fn":
+  type: FUNCTION
+"(":
+  type: (
+"a":
+  type: IDENT
+",":
+  type: ,
+"b":
+  type: IDENT
+")":
+  type: )
+"{":
+  type: {
+"var":
+  type: VAR
+"s":
+  type: IDENT
+"=":
+  type: =
+" This is an invalid string literal  /// error":
+  type: ILLEGAL
+"var":
+  type: VAR
+"m":
+  type: IDENT
 ";":
   type: ;
 "var":
   type: VAR
-"ten":
+"#23sd":
+  type: ILLEGAL
+"m":
   type: IDENT
+"=":
+  type: =
+"b":
+  type: IDENT
+"%":
+  type: %
+"a":
+  type: IDENT
+";":
+  type: ;
+"if":
+  type: IF
+"(":
+  type: (
+"m":
+  type: IDENT
+"==":
+  type: ==
+"0":
+  type: INT
+")":
+  type: )
+"{":
+  type: {
+"return":
+  type: RETURN
+"a":
+  type: IDENT
+";":
+  type: ;
+"}":
+  type: }
+"else":
+  type: ELSE
+"{":
+  type: {
+"return":
+  type: RETURN
+"gcd":
+  type: IDENT
+"(":
+  type: (
+"m":
+  type: IDENT
+",":
+  type: ,
+"a":
+  type: IDENT
+")":
+  type: )
+";":
+  type: ;
+"}":
+  type: }
+"}":
+  type: }
+";":
+  type: ;
+"var":
+  type: VAR
+"fibonacci":
+  type: IDENT
+"=":
+  type: =
+"fn":
+  type: FUNCTION
+"(":
+  type: (
+"n":
+  type: IDENT
+")":
+  type: )
+"{":
+  type: {
+"if":
+  type: IF
+"(":
+  type: (
+"(":
+  type: (
+"n":
+  type: IDENT
+"==":
+  type: ==
+"1":
+  type: INT
+")":
+  type: )
+"||":
+  type: ||
+"(":
+  type: (
+"n":
+  type: IDENT
+"==":
+  type: ==
+"2":
+  type: INT
+")":
+  type: )
+")":
+  type: )
+"{":
+  type: {
+"return":
+  type: RETURN
+"1":
+  type: INT
+";":
+  type: ;
+"}":
+  type: }
+"else":
+  type: ELSE
+"{":
+  type: {
+"return":
+  type: RETURN
+"fibonacci":
+  type: IDENT
+"(":
+  type: (
+"n":
+  type: IDENT
+"-":
+  type: -
+"1":
+  type: INT
+")":
+  type: )
+"+":
+  type: +
+"fibonacci":
+  type: IDENT
+"(":
+  type: (
+"n":
+  type: IDENT
+"-":
+  type: -
+"2":
+  type: INT
+")":
+  type: )
+";":
+  type: ;
+"}":
+  type: }
+"}":
+  type: }
+";":
+  type: ;
+"var":
+  type: VAR
+"average":
+  type: IDENT
+"=":
+  type: =
+"fn":
+  type: FUNCTION
+"(":
+  type: (
+"n":
+  type: IDENT
+"1":
+  type: INT
+",":
+  type: ,
+"n":
+  type: IDENT
+"2":
+  type: INT
+",":
+  type: ,
+"n":
+  type: IDENT
+"3":
+  type: INT
+")":
+  type: )
+"{":
+  type: {
+"var":
+  type: VAR
+"sum":
+  type: IDENT
+"=":
+  type: =
+"n":
+  type: IDENT
+"1":
+  type: INT
+"+":
+  type: +
+"n":
+  type: IDENT
+"2":
+  type: INT
+"+":
+  type: +
+"n":
+  type: IDENT
+"3":
+  type: INT
+";":
+  type: ;
+"return":
+  type: RETURN
+"sum":
+  type: IDENT
+"/":
+  type: /
+"3":
+  type: INT
+";":
+  type: ;
+"}":
+  type: }
+";":
+  type: ;
+"var":
+  type: VAR
+"testArrays":
+  type: IDENT
+"=":
+  type: =
+"fn":
+  type: FUNCTION
+"(":
+  type: (
+")":
+  type: )
+"{":
+  type: {
+"var":
+  type: VAR
+"arr":
+  type: IDENT
+"=":
+  type: =
+"[":
+  type: [
+"1":
+  type: INT
+",":
+  type: ,
+"2":
+  type: INT
+",":
+  type: ,
+"3":
+  type: INT
+",":
+  type: ,
+"4":
+  type: INT
+",":
+  type: ,
+"5":
+  type: INT
+"]":
+  type: ]
+";":
+  type: ;
+"var":
+  type: VAR
+"firstElement":
+  type: IDENT
+"=":
+  type: =
+"arr":
+  type: IDENT
+"[":
+  type: [
+"0":
+  type: INT
+"]":
+  type: ]
+";":
+  type: ;
+"arr":
+  type: IDENT
+"[":
+  type: [
+"2":
+  type: INT
+"]":
+  type: ]
 "=":
   type: =
 "10":
   type: INT
 ";":
   type: ;
+"return":
+  type: RETURN
+"arr":
+  type: IDENT
+";":
+  type: ;
+"}":
+  type: }
+";":
+  type: ;
+"var":
+  type: VAR
+"logicalOperators":
+  type: IDENT
+"=":
+  type: =
+"fn":
+  type: FUNCTION
+"(":
+  type: (
+")":
+  type: )
+"{":
+  type: {
+"var":
+  type: VAR
+"a":
+  type: IDENT
+"=":
+  type: =
+"true":
+  type: TRUE
+";":
+  type: ;
+"var":
+  type: VAR
+"b":
+  type: IDENT
+"=":
+  type: =
+"false":
+  type: FALSE
+";":
+  type: ;
 "var":
   type: VAR
 "result":
   type: IDENT
+"1":
+  type: INT
 "=":
   type: =
-"isEqual":
+"a":
+  type: IDENT
+"&&":
+  type: &&
+"b":
+  type: IDENT
+";":
+  type: ;
+"var":
+  type: VAR
+"result":
+  type: IDENT
+"2":
+  type: INT
+"=":
+  type: =
+"a":
+  type: IDENT
+"||":
+  type: ||
+"b":
+  type: IDENT
+";":
+  type: ;
+"var":
+  type: VAR
+"result":
+  type: IDENT
+"3":
+  type: INT
+"=":
+  type: =
+"!":
+  type: !
+"a":
+  type: IDENT
+";":
+  type: ;
+"return":
+  type: RETURN
+"result":
+  type: IDENT
+"2":
+  type: INT
+";":
+  type: ;
+"}":
+  type: }
+";":
+  type: ;
+"var":
+  type: VAR
+"multilineString":
+  type: IDENT
+"=":
+  type: =
+"fn":
+  type: FUNCTION
+"(":
+  type: (
+")":
+  type: )
+"{":
+  type: {
+"var":
+  type: VAR
+"message":
+  type: IDENT
+"=":
+  type: =
+"This is a multi-line
+string that demonstrates
+the backtick syntax in
+relang language":
+  type: STRING
+"return":
+  type: RETURN
+"message":
+  type: IDENT
+";":
+  type: ;
+"}":
+  type: }
+";":
+  type: ;
+"var":
+  type: VAR
+"main":
+  type: IDENT
+"=":
+  type: =
+"fn":
+  type: FUNCTION
+"(":
+  type: (
+")":
+  type: )
+"{":
+  type: {
+"var":
+  type: VAR
+"num":
+  type: IDENT
+"=":
+  type: =
+"17":
+  type: INT
+";":
+  type: ;
+"var":
+  type: VAR
+"isPrimeResult":
+  type: IDENT
+"=":
+  type: =
+"isPrime":
   type: IDENT
 "(":
   type: (
-"five":
+"num":
   type: IDENT
+")":
+  type: )
+";":
+  type: ;
+"var":
+  type: VAR
+"fibResult":
+  type: IDENT
+"=":
+  type: =
+"fibonacci":
+  type: IDENT
+"(":
+  type: (
+"10":
+  type: INT
+")":
+  type: )
+";":
+  type: ;
+"var":
+  type: VAR
+"gcdResult":
+  type: IDENT
+"=":
+  type: =
+"gcd":
+  type: IDENT
+"(":
+  type: (
+"56":
+  type: INT
 ",":
   type: ,
-"ten":
-  type: IDENT
+"98":
+  type: INT
 ")":
   type: )
 ";":
   type: ;
-"print":
-  type: IDENT
-"(":
-  type: (
-"result":
-  type: IDENT
-")":
-  type: )
-";":
-  type: ;
-"var":
-  type: VAR
-"str":
-  type: IDENT
-"=":
-  type: =
-"This is a string":
+"return":
+  type: RETURN
+"Lexical analysis test complete":
   type: STRING
-"print":
+"}":
+  type: }
+";":
+  type: ;
+"main":
   type: IDENT
 "(":
   type: (
-"result":
-  type: IDENT
 ")":
   type: )
 ";":
   type: ;
+"":
+  type: EOF
