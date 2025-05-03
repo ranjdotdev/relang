@@ -3,55 +3,56 @@ package repl
 import (
 	"bufio"
 	"fmt"
-	"io"
 	"os"
+	"path/filepath"
 
 	"github.com/ranjdotdev/relang/lexer"
 	"github.com/ranjdotdev/relang/token"
 )
 
-const PROMPT = ">> "
+func Tokenize(inPath string, outPath string) {
+	file, err := os.Open(filepath.Join("io", inPath))
+	if err != nil {
+		panic(err)
+	}
+	defer file.Close()
 
-func Start(in io.Reader, out io.Writer){
-	scanner := bufio.NewScanner(in)
+	outFile, err := os.Create(filepath.Join("io", outPath))
+	if err != nil {
+		panic(err)
+	}
+	defer outFile.Close()
 
-	for {
-		fmt.Print(PROMPT)
-		scanned := scanner.Scan()
-		if !scanned {
-			return
-		}
+	writer := bufio.NewWriter(outFile)
+	defer writer.Flush()
+
+	scanner := bufio.NewScanner(file)
+	l := lexer.New()
+
+	for scanner.Scan() {
 		line := scanner.Text()
-		l := lexer.New(line)
-		for tok := l.NextToken(); tok.Type != token.EOF; tok = l.NextToken() {
-			fmt.Printf("%+v\n", tok)
+		l.SetLine(line)
+
+		for {
+			tok := l.NextToken()
+
+			if tok.Type == token.EOL {
+				break
+			}
+
+			tokenString := fmt.Sprintf("\"%s\":\n   type: %s\n   line: %d\n   column: %d\n\n",
+				tok.Lexeme, tok.Type, tok.Line, tok.Column)
+			_, err := writer.WriteString(tokenString)
+			if err != nil {
+				panic(err)
+			}
 		}
 	}
-}
 
-func StartOnFile(inPath string, outPath string) {
-    data, err := os.ReadFile(fmt.Sprintf("./io/%s", inPath))
-    if err != nil {panic(err)}
-    
-    outFile, err := os.Create(fmt.Sprintf("./io/%s", outPath))
-    if err != nil {panic(err)}
-    defer outFile.Close()
-    
-    writer := bufio.NewWriter(outFile)
-    defer writer.Flush()
-    
-    l := lexer.New(string(data))
-    
-    for {
-        tok := l.NextToken()
-        tokenString := fmt.Sprintf("\"%s\":\n  type: %s\n", tok.Lexeme, tok.Type)
-        _, err := writer.WriteString(tokenString)
-        if err != nil {
-            panic(err)
-        }
-        
-        if tok.Type == token.EOF {
-            break
-        }
-    }
+	l.End()
+	l.ReportErrors()
+
+	if err := scanner.Err(); err != nil {
+		fmt.Fprintf(writer, "Error reading file: %v\n", err)
+	}
 }

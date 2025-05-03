@@ -1,9 +1,17 @@
 package main
 
 import (
+	"fmt"
+	"time"
+
 	"github.com/ranjdotdev/relang/repl"
 )
 
 func main() {
-	repl.StartOnFile("test.re", "output.yml")
+	start := time.Now()
+
+	repl.Tokenize("test.re", "output.yml")
+
+	elapsed := time.Since(start)
+	fmt.Printf("\nThe tokenization only took: %s\n", elapsed)
 }

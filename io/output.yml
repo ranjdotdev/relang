@@ -1,693 +1,1728 @@
 "var":
-  type: VAR
+   type: VAR
+   line: 2
+   column: 0
+
 "isPrime":
-  type: IDENT
+   type: IDENT
+   line: 2
+   column: 3
+
 "=":
-  type: =
+   type: =
+   line: 2
+   column: 12
+
 "fn":
-  type: FUNCTION
+   type: FUNCTION
+   line: 2
+   column: 13
+
 "(":
-  type: (
+   type: (
+   line: 2
+   column: 16
+
 "c":
-  type: IDENT
+   type: IDENT
+   line: 2
+   column: 17
+
 ")":
-  type: )
+   type: )
+   line: 2
+   column: 18
+
 "{":
-  type: {
+   type: {
+   line: 2
+   column: 20
+
 "if":
-  type: IF
+   type: IF
+   line: 3
+   column: 0
+
 "(":
-  type: (
+   type: (
+   line: 3
+   column: 7
+
 "c":
-  type: IDENT
+   type: IDENT
+   line: 3
+   column: 8
+
 "%":
-  type: %
+   type: %
+   line: 3
+   column: 10
+
 "2":
-  type: INT
+   type: INT
+   line: 3
+   column: 11
+
 "==":
-  type: ==
+   type: ==
+   line: 3
+   column: 15
+
 "0":
-  type: INT
+   type: INT
+   line: 3
+   column: 16
+
 ")":
-  type: )
+   type: )
+   line: 3
+   column: 18
+
 "{":
-  type: {
+   type: {
+   line: 3
+   column: 20
+
 "return":
-  type: RETURN
+   type: RETURN
+   line: 4
+   column: 0
+
 "false":
-  type: FALSE
+   type: FALSE
+   line: 4
+   column: 14
+
 ";":
-  type: ;
+   type: ;
+   line: 4
+   column: 20
+
 "}":
-  type: }
+   type: }
+   line: 5
+   column: 4
+
 "var":
-  type: VAR
+   type: VAR
+   line: 6
+   column: 0
+
 "d":
-  type: IDENT
+   type: IDENT
+   line: 6
+   column: 7
+
 ";":
-  type: ;
+   type: ;
+   line: 6
+   column: 9
+
 "d":
-  type: IDENT
+   type: IDENT
+   line: 7
+   column: 0
+
 "=":
-  type: =
+   type: =
+   line: 7
+   column: 6
+
 "3":
-  type: INT
+   type: INT
+   line: 7
+   column: 7
+
 ";":
-  type: ;
+   type: ;
+   line: 7
+   column: 9
+
 "for":
-  type: LOOP
+   type: LOOP
+   line: 8
+   column: 0
+
 "(":
-  type: (
+   type: (
+   line: 8
+   column: 8
+
 "d":
-  type: IDENT
+   type: IDENT
+   line: 8
+   column: 9
+
 "!=":
-  type: !=
+   type: !=
+   line: 8
+   column: 12
+
 "c":
-  type: IDENT
+   type: IDENT
+   line: 8
+   column: 13
+
 ")":
-  type: )
+   type: )
+   line: 8
+   column: 15
+
 "{":
-  type: {
+   type: {
+   line: 8
+   column: 17
+
 "if":
-  type: IF
+   type: IF
+   line: 9
+   column: 0
+
 "(":
-  type: (
+   type: (
+   line: 9
+   column: 11
+
 "c":
-  type: IDENT
+   type: IDENT
+   line: 9
+   column: 12
+
 "%":
-  type: %
+   type: %
+   line: 9
+   column: 14
+
 "d":
-  type: IDENT
+   type: IDENT
+   line: 9
+   column: 15
+
 "==":
-  type: ==
+   type: ==
+   line: 9
+   column: 19
+
 "0":
-  type: INT
+   type: INT
+   line: 9
+   column: 20
+
 ")":
-  type: )
+   type: )
+   line: 9
+   column: 22
+
 "{":
-  type: {
+   type: {
+   line: 9
+   column: 24
+
 "return":
-  type: RETURN
+   type: RETURN
+   line: 10
+   column: 0
+
 "false":
-  type: FALSE
+   type: FALSE
+   line: 10
+   column: 18
+
 ";":
-  type: ;
+   type: ;
+   line: 10
+   column: 24
+
 "}":
-  type: }
+   type: }
+   line: 11
+   column: 8
+
 "d":
-  type: IDENT
+   type: IDENT
+   line: 12
+   column: 0
+
 "=":
-  type: =
+   type: =
+   line: 12
+   column: 10
+
 "d":
-  type: IDENT
+   type: IDENT
+   line: 12
+   column: 11
+
 "+":
-  type: +
+   type: +
+   line: 12
+   column: 14
+
 "2":
-  type: INT
+   type: INT
+   line: 12
+   column: 15
+
 ";":
-  type: ;
+   type: ;
+   line: 12
+   column: 17
+
 "}":
-  type: }
+   type: }
+   line: 13
+   column: 4
+
 "var":
-  type: VAR
+   type: VAR
+   line: 14
+   column: 0
+
 "s":
-  type: IDENT
+   type: IDENT
+   line: 14
+   column: 7
+
 "=":
-  type: =
+   type: =
+   line: 14
+   column: 10
+
 "This is a useless string literal":
-  type: STRING
+   type: STRING
+   line: 14
+   column: 46
+
 "return":
-  type: RETURN
+   type: RETURN
+   line: 15
+   column: 0
+
 "true":
-  type: TRUE
+   type: TRUE
+   line: 15
+   column: 10
+
 ";":
-  type: ;
+   type: ;
+   line: 15
+   column: 15
+
 "}":
-  type: }
+   type: }
+   line: 16
+   column: 0
+
 ";":
-  type: ;
+   type: ;
+   line: 16
+   column: 1
+
 "var":
-  type: VAR
+   type: VAR
+   line: 20
+   column: 0
+
 "gcd":
-  type: IDENT
+   type: IDENT
+   line: 20
+   column: 3
+
 "=":
-  type: =
+   type: =
+   line: 20
+   column: 8
+
 "fn":
-  type: FUNCTION
+   type: FUNCTION
+   line: 20
+   column: 9
+
 "(":
-  type: (
+   type: (
+   line: 20
+   column: 12
+
 "a":
-  type: IDENT
+   type: IDENT
+   line: 20
+   column: 13
+
 ",":
-  type: ,
+   type: ,
+   line: 20
+   column: 14
+
 "b":
-  type: IDENT
+   type: IDENT
+   line: 20
+   column: 15
+
 ")":
-  type: )
+   type: )
+   line: 20
+   column: 17
+
 "{":
-  type: {
+   type: {
+   line: 20
+   column: 19
+
 "var":
-  type: VAR
+   type: VAR
+   line: 21
+   column: 0
+
 "s":
-  type: IDENT
+   type: IDENT
+   line: 21
+   column: 7
+
 "=":
-  type: =
+   type: =
+   line: 21
+   column: 10
+
 " This is an invalid string literal  /// error":
-  type: ILLEGAL
+   type: ILLEGAL
+   line: 21
+   column: 58
+
 "var":
-  type: VAR
+   type: VAR
+   line: 22
+   column: 0
+
 "m":
-  type: IDENT
+   type: IDENT
+   line: 22
+   column: 7
+
 ";":
-  type: ;
+   type: ;
+   line: 22
+   column: 9
+
 "var":
-  type: VAR
+   type: VAR
+   line: 23
+   column: 0
+
 "#23sd":
-  type: ILLEGAL
+   type: ILLEGAL
+   line: 23
+   column: 7
+
 "m":
-  type: IDENT
+   type: IDENT
+   line: 24
+   column: 0
+
 "=":
-  type: =
+   type: =
+   line: 24
+   column: 6
+
 "b":
-  type: IDENT
+   type: IDENT
+   line: 24
+   column: 7
+
 "%":
-  type: %
+   type: %
+   line: 24
+   column: 10
+
 "a":
-  type: IDENT
+   type: IDENT
+   line: 24
+   column: 11
+
 ";":
-  type: ;
+   type: ;
+   line: 24
+   column: 13
+
 "if":
-  type: IF
+   type: IF
+   line: 25
+   column: 0
+
 "(":
-  type: (
+   type: (
+   line: 25
+   column: 7
+
 "m":
-  type: IDENT
+   type: IDENT
+   line: 25
+   column: 8
+
 "==":
-  type: ==
+   type: ==
+   line: 25
+   column: 11
+
 "0":
-  type: INT
+   type: INT
+   line: 25
+   column: 12
+
 ")":
-  type: )
+   type: )
+   line: 25
+   column: 14
+
 "{":
-  type: {
+   type: {
+   line: 25
+   column: 16
+
 "return":
-  type: RETURN
+   type: RETURN
+   line: 26
+   column: 0
+
 "a":
-  type: IDENT
+   type: IDENT
+   line: 26
+   column: 14
+
 ";":
-  type: ;
+   type: ;
+   line: 26
+   column: 16
+
 "}":
-  type: }
+   type: }
+   line: 27
+   column: 4
+
 "else":
-  type: ELSE
+   type: ELSE
+   line: 27
+   column: 5
+
 "{":
-  type: {
+   type: {
+   line: 27
+   column: 11
+
 "return":
-  type: RETURN
+   type: RETURN
+   line: 28
+   column: 0
+
 "gcd":
-  type: IDENT
+   type: IDENT
+   line: 28
+   column: 14
+
 "(":
-  type: (
+   type: (
+   line: 28
+   column: 18
+
 "m":
-  type: IDENT
+   type: IDENT
+   line: 28
+   column: 19
+
 ",":
-  type: ,
+   type: ,
+   line: 28
+   column: 20
+
 "a":
-  type: IDENT
+   type: IDENT
+   line: 28
+   column: 21
+
 ")":
-  type: )
+   type: )
+   line: 28
+   column: 23
+
 ";":
-  type: ;
+   type: ;
+   line: 28
+   column: 24
+
 "}":
-  type: }
+   type: }
+   line: 29
+   column: 4
+
 "}":
-  type: }
+   type: }
+   line: 30
+   column: 0
+
 ";":
-  type: ;
+   type: ;
+   line: 30
+   column: 1
+
 "var":
-  type: VAR
+   type: VAR
+   line: 32
+   column: 0
+
 "fibonacci":
-  type: IDENT
+   type: IDENT
+   line: 32
+   column: 3
+
 "=":
-  type: =
+   type: =
+   line: 32
+   column: 14
+
 "fn":
-  type: FUNCTION
+   type: FUNCTION
+   line: 32
+   column: 15
+
 "(":
-  type: (
+   type: (
+   line: 32
+   column: 18
+
 "n":
-  type: IDENT
+   type: IDENT
+   line: 32
+   column: 19
+
 ")":
-  type: )
+   type: )
+   line: 32
+   column: 20
+
 "{":
-  type: {
+   type: {
+   line: 32
+   column: 22
+
 "if":
-  type: IF
+   type: IF
+   line: 33
+   column: 0
+
 "(":
-  type: (
+   type: (
+   line: 33
+   column: 7
+
 "(":
-  type: (
+   type: (
+   line: 33
+   column: 8
+
 "n":
-  type: IDENT
+   type: IDENT
+   line: 33
+   column: 9
+
 "==":
-  type: ==
+   type: ==
+   line: 33
+   column: 12
+
 "1":
-  type: INT
+   type: INT
+   line: 33
+   column: 13
+
 ")":
-  type: )
+   type: )
+   line: 33
+   column: 15
+
 "||":
-  type: ||
+   type: ||
+   line: 33
+   column: 18
+
 "(":
-  type: (
+   type: (
+   line: 33
+   column: 20
+
 "n":
-  type: IDENT
+   type: IDENT
+   line: 33
+   column: 21
+
 "==":
-  type: ==
+   type: ==
+   line: 33
+   column: 24
+
 "2":
-  type: INT
+   type: INT
+   line: 33
+   column: 25
+
 ")":
-  type: )
+   type: )
+   line: 33
+   column: 27
+
 ")":
-  type: )
+   type: )
+   line: 33
+   column: 28
+
 "{":
-  type: {
+   type: {
+   line: 33
+   column: 30
+
 "return":
-  type: RETURN
+   type: RETURN
+   line: 34
+   column: 0
+
 "1":
-  type: INT
+   type: INT
+   line: 34
+   column: 14
+
 ";":
-  type: ;
+   type: ;
+   line: 34
+   column: 16
+
 "}":
-  type: }
+   type: }
+   line: 35
+   column: 4
+
 "else":
-  type: ELSE
+   type: ELSE
+   line: 35
+   column: 5
+
 "{":
-  type: {
+   type: {
+   line: 35
+   column: 11
+
 "return":
-  type: RETURN
+   type: RETURN
+   line: 36
+   column: 0
+
 "fibonacci":
-  type: IDENT
+   type: IDENT
+   line: 36
+   column: 14
+
 "(":
-  type: (
+   type: (
+   line: 36
+   column: 24
+
 "n":
-  type: IDENT
+   type: IDENT
+   line: 36
+   column: 25
+
 "-":
-  type: -
+   type: -
+   line: 36
+   column: 27
+
 "1":
-  type: INT
+   type: INT
+   line: 36
+   column: 28
+
 ")":
-  type: )
+   type: )
+   line: 36
+   column: 30
+
 "+":
-  type: +
+   type: +
+   line: 36
+   column: 32
+
 "fibonacci":
-  type: IDENT
+   type: IDENT
+   line: 36
+   column: 33
+
 "(":
-  type: (
+   type: (
+   line: 36
+   column: 43
+
 "n":
-  type: IDENT
+   type: IDENT
+   line: 36
+   column: 44
+
 "-":
-  type: -
+   type: -
+   line: 36
+   column: 46
+
 "2":
-  type: INT
+   type: INT
+   line: 36
+   column: 47
+
 ")":
-  type: )
+   type: )
+   line: 36
+   column: 49
+
 ";":
-  type: ;
+   type: ;
+   line: 36
+   column: 50
+
 "}":
-  type: }
+   type: }
+   line: 37
+   column: 4
+
 "}":
-  type: }
+   type: }
+   line: 38
+   column: 0
+
 ";":
-  type: ;
+   type: ;
+   line: 38
+   column: 1
+
 "var":
-  type: VAR
+   type: VAR
+   line: 40
+   column: 0
+
 "average":
-  type: IDENT
+   type: IDENT
+   line: 40
+   column: 3
+
 "=":
-  type: =
+   type: =
+   line: 40
+   column: 12
+
 "fn":
-  type: FUNCTION
+   type: FUNCTION
+   line: 40
+   column: 13
+
 "(":
-  type: (
+   type: (
+   line: 40
+   column: 16
+
 "n":
-  type: IDENT
+   type: IDENT
+   line: 40
+   column: 17
+
 "1":
-  type: INT
+   type: INT
+   line: 40
+   column: 18
+
 ",":
-  type: ,
+   type: ,
+   line: 40
+   column: 19
+
 "n":
-  type: IDENT
+   type: IDENT
+   line: 40
+   column: 20
+
 "2":
-  type: INT
+   type: INT
+   line: 40
+   column: 22
+
 ",":
-  type: ,
+   type: ,
+   line: 40
+   column: 23
+
 "n":
-  type: IDENT
+   type: IDENT
+   line: 40
+   column: 24
+
 "3":
-  type: INT
+   type: INT
+   line: 40
+   column: 26
+
 ")":
-  type: )
+   type: )
+   line: 40
+   column: 27
+
 "{":
-  type: {
+   type: {
+   line: 40
+   column: 29
+
 "var":
-  type: VAR
+   type: VAR
+   line: 41
+   column: 0
+
 "sum":
-  type: IDENT
+   type: IDENT
+   line: 41
+   column: 7
+
 "=":
-  type: =
+   type: =
+   line: 41
+   column: 12
+
 "n":
-  type: IDENT
+   type: IDENT
+   line: 41
+   column: 13
+
 "1":
-  type: INT
+   type: INT
+   line: 41
+   column: 15
+
 "+":
-  type: +
+   type: +
+   line: 41
+   column: 17
+
 "n":
-  type: IDENT
+   type: IDENT
+   line: 41
+   column: 18
+
 "2":
-  type: INT
+   type: INT
+   line: 41
+   column: 20
+
 "+":
-  type: +
+   type: +
+   line: 41
+   column: 22
+
 "n":
-  type: IDENT
+   type: IDENT
+   line: 41
+   column: 23
+
 "3":
-  type: INT
+   type: INT
+   line: 41
+   column: 25
+
 ";":
-  type: ;
+   type: ;
+   line: 41
+   column: 26
+
 "return":
-  type: RETURN
+   type: RETURN
+   line: 42
+   column: 0
+
 "sum":
-  type: IDENT
+   type: IDENT
+   line: 42
+   column: 10
+
 "/":
-  type: /
+   type: /
+   line: 42
+   column: 15
+
 "3":
-  type: INT
+   type: INT
+   line: 42
+   column: 16
+
 ";":
-  type: ;
+   type: ;
+   line: 42
+   column: 18
+
 "}":
-  type: }
+   type: }
+   line: 43
+   column: 0
+
 ";":
-  type: ;
+   type: ;
+   line: 43
+   column: 1
+
 "var":
-  type: VAR
+   type: VAR
+   line: 46
+   column: 0
+
 "testArrays":
-  type: IDENT
+   type: IDENT
+   line: 46
+   column: 3
+
 "=":
-  type: =
+   type: =
+   line: 46
+   column: 15
+
 "fn":
-  type: FUNCTION
+   type: FUNCTION
+   line: 46
+   column: 16
+
 "(":
-  type: (
+   type: (
+   line: 46
+   column: 19
+
 ")":
-  type: )
+   type: )
+   line: 46
+   column: 20
+
 "{":
-  type: {
+   type: {
+   line: 46
+   column: 22
+
 "var":
-  type: VAR
+   type: VAR
+   line: 47
+   column: 0
+
 "arr":
-  type: IDENT
+   type: IDENT
+   line: 47
+   column: 7
+
 "=":
-  type: =
+   type: =
+   line: 47
+   column: 12
+
 "[":
-  type: [
+   type: [
+   line: 47
+   column: 14
+
 "1":
-  type: INT
+   type: INT
+   line: 47
+   column: 15
+
 ",":
-  type: ,
+   type: ,
+   line: 47
+   column: 16
+
 "2":
-  type: INT
+   type: INT
+   line: 47
+   column: 17
+
 ",":
-  type: ,
+   type: ,
+   line: 47
+   column: 19
+
 "3":
-  type: INT
+   type: INT
+   line: 47
+   column: 20
+
 ",":
-  type: ,
+   type: ,
+   line: 47
+   column: 22
+
 "4":
-  type: INT
+   type: INT
+   line: 47
+   column: 23
+
 ",":
-  type: ,
+   type: ,
+   line: 47
+   column: 25
+
 "5":
-  type: INT
+   type: INT
+   line: 47
+   column: 26
+
 "]":
-  type: ]
+   type: ]
+   line: 47
+   column: 28
+
 ";":
-  type: ;
+   type: ;
+   line: 47
+   column: 29
+
 "var":
-  type: VAR
+   type: VAR
+   line: 48
+   column: 0
+
 "firstElement":
-  type: IDENT
+   type: IDENT
+   line: 48
+   column: 7
+
 "=":
-  type: =
+   type: =
+   line: 48
+   column: 21
+
 "arr":
-  type: IDENT
+   type: IDENT
+   line: 48
+   column: 22
+
 "[":
-  type: [
+   type: [
+   line: 48
+   column: 26
+
 "0":
-  type: INT
+   type: INT
+   line: 48
+   column: 27
+
 "]":
-  type: ]
+   type: ]
+   line: 48
+   column: 28
+
 ";":
-  type: ;
+   type: ;
+   line: 48
+   column: 29
+
 "arr":
-  type: IDENT
+   type: IDENT
+   line: 49
+   column: 0
+
 "[":
-  type: [
+   type: [
+   line: 49
+   column: 7
+
 "2":
-  type: INT
+   type: INT
+   line: 49
+   column: 8
+
 "]":
-  type: ]
+   type: ]
+   line: 49
+   column: 9
+
 "=":
-  type: =
+   type: =
+   line: 49
+   column: 11
+
 "10":
-  type: INT
+   type: INT
+   line: 49
+   column: 12
+
 ";":
-  type: ;
+   type: ;
+   line: 49
+   column: 15
+
 "return":
-  type: RETURN
+   type: RETURN
+   line: 50
+   column: 0
+
 "arr":
-  type: IDENT
+   type: IDENT
+   line: 50
+   column: 10
+
 ";":
-  type: ;
+   type: ;
+   line: 50
+   column: 14
+
 "}":
-  type: }
+   type: }
+   line: 51
+   column: 0
+
 ";":
-  type: ;
+   type: ;
+   line: 51
+   column: 1
+
 "var":
-  type: VAR
+   type: VAR
+   line: 53
+   column: 0
+
 "logicalOperators":
-  type: IDENT
+   type: IDENT
+   line: 53
+   column: 3
+
 "=":
-  type: =
+   type: =
+   line: 53
+   column: 21
+
 "fn":
-  type: FUNCTION
+   type: FUNCTION
+   line: 53
+   column: 22
+
 "(":
-  type: (
+   type: (
+   line: 53
+   column: 25
+
 ")":
-  type: )
+   type: )
+   line: 53
+   column: 26
+
 "{":
-  type: {
+   type: {
+   line: 53
+   column: 28
+
 "var":
-  type: VAR
+   type: VAR
+   line: 54
+   column: 0
+
 "a":
-  type: IDENT
+   type: IDENT
+   line: 54
+   column: 7
+
 "=":
-  type: =
+   type: =
+   line: 54
+   column: 10
+
 "true":
-  type: TRUE
+   type: TRUE
+   line: 54
+   column: 11
+
 ";":
-  type: ;
+   type: ;
+   line: 54
+   column: 16
+
 "var":
-  type: VAR
+   type: VAR
+   line: 55
+   column: 0
+
 "b":
-  type: IDENT
+   type: IDENT
+   line: 55
+   column: 7
+
 "=":
-  type: =
+   type: =
+   line: 55
+   column: 10
+
 "false":
-  type: FALSE
+   type: FALSE
+   line: 55
+   column: 11
+
 ";":
-  type: ;
+   type: ;
+   line: 55
+   column: 17
+
 "var":
-  type: VAR
+   type: VAR
+   line: 56
+   column: 0
+
 "result":
-  type: IDENT
+   type: IDENT
+   line: 56
+   column: 7
+
 "1":
-  type: INT
+   type: INT
+   line: 56
+   column: 14
+
 "=":
-  type: =
+   type: =
+   line: 56
+   column: 16
+
 "a":
-  type: IDENT
+   type: IDENT
+   line: 56
+   column: 17
+
 "&&":
-  type: &&
+   type: &&
+   line: 56
+   column: 21
+
 "b":
-  type: IDENT
+   type: IDENT
+   line: 56
+   column: 22
+
 ";":
-  type: ;
+   type: ;
+   line: 56
+   column: 24
+
 "var":
-  type: VAR
+   type: VAR
+   line: 57
+   column: 0
+
 "result":
-  type: IDENT
+   type: IDENT
+   line: 57
+   column: 7
+
 "2":
-  type: INT
+   type: INT
+   line: 57
+   column: 14
+
 "=":
-  type: =
+   type: =
+   line: 57
+   column: 16
+
 "a":
-  type: IDENT
+   type: IDENT
+   line: 57
+   column: 17
+
 "||":
-  type: ||
+   type: ||
+   line: 57
+   column: 21
+
 "b":
-  type: IDENT
+   type: IDENT
+   line: 57
+   column: 22
+
 ";":
-  type: ;
+   type: ;
+   line: 57
+   column: 24
+
 "var":
-  type: VAR
+   type: VAR
+   line: 58
+   column: 0
+
 "result":
-  type: IDENT
+   type: IDENT
+   line: 58
+   column: 7
+
 "3":
-  type: INT
+   type: INT
+   line: 58
+   column: 14
+
 "=":
-  type: =
+   type: =
+   line: 58
+   column: 16
+
 "!":
-  type: !
+   type: !
+   line: 58
+   column: 18
+
 "a":
-  type: IDENT
+   type: IDENT
+   line: 58
+   column: 19
+
 ";":
-  type: ;
+   type: ;
+   line: 58
+   column: 20
+
 "return":
-  type: RETURN
+   type: RETURN
+   line: 59
+   column: 0
+
 "result":
-  type: IDENT
+   type: IDENT
+   line: 59
+   column: 10
+
 "2":
-  type: INT
+   type: INT
+   line: 59
+   column: 17
+
 ";":
-  type: ;
+   type: ;
+   line: 59
+   column: 18
+
 "}":
-  type: }
+   type: }
+   line: 60
+   column: 0
+
 ";":
-  type: ;
+   type: ;
+   line: 60
+   column: 1
+
 "var":
-  type: VAR
+   type: VAR
+   line: 62
+   column: 0
+
 "multilineString":
-  type: IDENT
+   type: IDENT
+   line: 62
+   column: 3
+
 "=":
-  type: =
+   type: =
+   line: 62
+   column: 20
+
 "fn":
-  type: FUNCTION
+   type: FUNCTION
+   line: 62
+   column: 21
+
 "(":
-  type: (
+   type: (
+   line: 62
+   column: 24
+
 ")":
-  type: )
+   type: )
+   line: 62
+   column: 25
+
 "{":
-  type: {
+   type: {
+   line: 62
+   column: 27
+
 "var":
-  type: VAR
+   type: VAR
+   line: 63
+   column: 0
+
 "message":
-  type: IDENT
+   type: IDENT
+   line: 63
+   column: 7
+
 "=":
-  type: =
+   type: =
+   line: 63
+   column: 16
+
 "This is a multi-line
 string that demonstrates
 the backtick syntax in
 relang language":
-  type: STRING
+   type: STRING
+   line: 63
+   column: 18
+
+";":
+   type: ;
+   line: 66
+   column: 16
+
 "return":
-  type: RETURN
+   type: RETURN
+   line: 67
+   column: 0
+
 "message":
-  type: IDENT
+   type: IDENT
+   line: 67
+   column: 10
+
 ";":
-  type: ;
+   type: ;
+   line: 67
+   column: 18
+
 "}":
-  type: }
+   type: }
+   line: 68
+   column: 0
+
 ";":
-  type: ;
+   type: ;
+   line: 68
+   column: 1
+
 "var":
-  type: VAR
+   type: VAR
+   line: 71
+   column: 0
+
 "main":
-  type: IDENT
+   type: IDENT
+   line: 71
+   column: 3
+
 "=":
-  type: =
+   type: =
+   line: 71
+   column: 9
+
 "fn":
-  type: FUNCTION
+   type: FUNCTION
+   line: 71
+   column: 10
+
 "(":
-  type: (
+   type: (
+   line: 71
+   column: 13
+
 ")":
-  type: )
+   type: )
+   line: 71
+   column: 14
+
 "{":
-  type: {
+   type: {
+   line: 71
+   column: 16
+
 "var":
-  type: VAR
+   type: VAR
+   line: 72
+   column: 0
+
 "num":
-  type: IDENT
+   type: IDENT
+   line: 72
+   column: 7
+
 "=":
-  type: =
+   type: =
+   line: 72
+   column: 12
+
 "17":
-  type: INT
+   type: INT
+   line: 72
+   column: 13
+
 ";":
-  type: ;
+   type: ;
+   line: 72
+   column: 16
+
 "var":
-  type: VAR
+   type: VAR
+   line: 73
+   column: 0
+
 "isPrimeResult":
-  type: IDENT
+   type: IDENT
+   line: 73
+   column: 7
+
 "=":
-  type: =
+   type: =
+   line: 73
+   column: 22
+
 "isPrime":
-  type: IDENT
+   type: IDENT
+   line: 73
+   column: 23
+
 "(":
-  type: (
+   type: (
+   line: 73
+   column: 31
+
 "num":
-  type: IDENT
+   type: IDENT
+   line: 73
+   column: 32
+
 ")":
-  type: )
+   type: )
+   line: 73
+   column: 35
+
 ";":
-  type: ;
+   type: ;
+   line: 73
+   column: 36
+
 "var":
-  type: VAR
+   type: VAR
+   line: 74
+   column: 0
+
 "fibResult":
-  type: IDENT
+   type: IDENT
+   line: 74
+   column: 7
+
 "=":
-  type: =
+   type: =
+   line: 74
+   column: 18
+
 "fibonacci":
-  type: IDENT
+   type: IDENT
+   line: 74
+   column: 19
+
 "(":
-  type: (
+   type: (
+   line: 74
+   column: 29
+
 "10":
-  type: INT
+   type: INT
+   line: 74
+   column: 30
+
 ")":
-  type: )
+   type: )
+   line: 74
+   column: 32
+
 ";":
-  type: ;
+   type: ;
+   line: 74
+   column: 33
+
 "var":
-  type: VAR
+   type: VAR
+   line: 75
+   column: 0
+
 "gcdResult":
-  type: IDENT
+   type: IDENT
+   line: 75
+   column: 7
+
 "=":
-  type: =
+   type: =
+   line: 75
+   column: 18
+
 "gcd":
-  type: IDENT
+   type: IDENT
+   line: 75
+   column: 19
+
 "(":
-  type: (
+   type: (
+   line: 75
+   column: 23
+
 "56":
-  type: INT
+   type: INT
+   line: 75
+   column: 24
+
 ",":
-  type: ,
+   type: ,
+   line: 75
+   column: 26
+
 "98":
-  type: INT
+   type: INT
+   line: 75
+   column: 27
+
 ")":
-  type: )
+   type: )
+   line: 75
+   column: 30
+
 ";":
-  type: ;
+   type: ;
+   line: 75
+   column: 31
+
 "return":
-  type: RETURN
+   type: RETURN
+   line: 77
+   column: 0
+
 "Lexical analysis test complete":
-  type: STRING
+   type: STRING
+   line: 77
+   column: 43
+
 "}":
-  type: }
+   type: }
+   line: 78
+   column: 0
+
 ";":
-  type: ;
+   type: ;
+   line: 78
+   column: 1
+
 "main":
-  type: IDENT
+   type: IDENT
+   line: 80
+   column: 0
+
 "(":
-  type: (
+   type: (
+   line: 80
+   column: 4
+
 ")":
-  type: )
+   type: )
+   line: 80
+   column: 5
+
 ";":
-  type: ;
-"":
-  type: EOF
+   type: ;
+   line: 80
+   column: 6
+
