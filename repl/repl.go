@@ -44,7 +44,7 @@ func StartOnFile(inPath string, outPath string) {
     
     for {
         tok := l.NextToken()
-        tokenString := fmt.Sprintf("\"%s\":\n  type: %s\n", tok.Literal, tok.Type)
+        tokenString := fmt.Sprintf("\"%s\":\n  type: %s\n", tok.Lexeme, tok.Type)
         _, err := writer.WriteString(tokenString)
         if err != nil {
             panic(err)
