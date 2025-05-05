@@ -61,6 +61,7 @@ func (l *Lexer) End() {
 		l.errors = append(l.errors, fmt.Sprintf("%d:%d: syntax error: unclosed multi-line comment", l.multiLineComment.startLine, l.multiLineComment.startCol))
 		l.mode = normalMode
 	}
+	l.eof = true
 }
 
 func (l *Lexer) Errors() []string {
@@ -71,6 +72,10 @@ func (l *Lexer) ReportErrors() {
 	for _, err := range l.errors {
 		fmt.Println(err)
 	}
+}
+
+func (l *Lexer) EOF() bool {
+	return l.eof
 }
 
 func (l *Lexer) readChar() {
